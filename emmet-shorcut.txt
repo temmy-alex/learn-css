@@ -1,0 +1,13 @@
+{} = digunakan untuk mengisi konten html yang memiliki konsep pair tag
+(tag yang memiliki penutup dan pembuka)
+Contoh : h1{Heading 1}
+
+* = digunakan untuk menentukan berapa banyak tag yang akan dibuat
+Contoh : p*3 (Mencetak tag paragraf sebanyak 3)
+
+$ = digunakan untuk memanggil jumlah tag yang di buat
+Contoh : p{Paragraf $}*3
+
+> = digunakan untuk menentukan mana tag html yang bersifat sebagai 
+(parent / pembungkus) dan mana yang sebagai child (anak dari element tsb)
+Contoh : ul>li*3

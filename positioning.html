@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        .outer {
+            background: blue;
+            width: 500px;
+            color: white;
+            padding: 1em;
+        }
+
+        .inner {
+            background: green;
+            color: white;
+            padding: 1em;
+            position: relative;
+            top: 2em;
+            right: -5em;
+        }
+
+        .banner {
+            /* background-image: url('img/nature.jpg'); */
+            background-image: url('https://images.unsplash.com/photo-1631878292229-f1936d871e79?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
+            background-repeat: no-repeat;
+        }
+
+        .banner h1 {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .banner p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- .outer{Outer}>.inner{Inner} -->
+    <div class="outer">Outer
+        <div class="inner">
+            Inner
+        </div>
+    </div>
+    <!-- button:submit.btn.btn-primary.btn-outline{Submit} -->
+    <!-- .banner>h1{Banner}+p*3 -->
+    <div class="banner">
+        <h1>Banner</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam reiciendis id 
+            pariatur quos perspiciatis iste iure harum nostrum voluptate veniam in 
+            aspernatur ipsum repellat delectus tempore neque praesentium, sit laboriosam?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam reiciendis id 
+            pariatur quos perspiciatis iste iure harum nostrum voluptate veniam in 
+            aspernatur ipsum repellat delectus tempore neque praesentium, sit laboriosam?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam reiciendis id 
+            pariatur quos perspiciatis iste iure harum nostrum voluptate veniam in 
+            aspernatur ipsum repellat delectus tempore neque praesentium, sit laboriosam?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam reiciendis id 
+            pariatur quos perspiciatis iste iure harum nostrum voluptate veniam in 
+            aspernatur ipsum repellat delectus tempore neque praesentium, sit laboriosam?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam reiciendis id 
+            pariatur quos perspiciatis iste iure harum nostrum voluptate veniam in 
+            aspernatur ipsum repellat delectus tempore neque praesentium, sit laboriosam?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam reiciendis id 
+            pariatur quos perspiciatis iste iure harum nostrum voluptate veniam in 
+            aspernatur ipsum repellat delectus tempore neque praesentium, sit laboriosam?
+        </p>
+    </div>
+</body>
+</html>

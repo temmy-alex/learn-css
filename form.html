@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        form {
+            /* Margin digunakan untuk menentukan jarak antar element */
+            /* top bottom 0 left right auto  */
+            margin: 0 auto;
+
+            /* 
+                top margin is 11px
+                right and left margins are 15px
+                bottom margin is 10px 
+            */
+            /* margin: 11px 15px 10px; */
+
+            /* 
+                top 14px 
+                right 15px 
+                bottom 16px
+                left 17px
+             */
+            /* margin: 14px 15px 16px 17px; */
+
+            /* Semua sisi memiliki jarak antar elemen 1em */
+            /* margin: 1em; */
+            
+            /* margin-left: 1px;
+            margin-top: 1px;
+            margin-right: 1px;
+            margin-bottom: 1px; */
+
+            width: 10em;
+        }
+
+        h1 {
+            color: teal;
+            font-family: Arial, Verdana;
+        }
+
+        label {
+            font-family: Arial, Verdana;
+        }
+
+        .btn-submit {
+            background-color: teal;
+            border: 1px solid teal;
+            color: white;
+            padding: 0.5em;
+            border-radius: 0.2em;
+        }
+
+        input[type="text"] {
+            border: 1px solid gray;
+            border-radius: 0.3em;
+            margin-top: 0.3em;
+        }
+
+        input[type="email"] {
+            border: 1px solid gray;
+            border-radius: 0.3em;
+            margin-top: 0.3em;
+        }
+
+        /* Padding : Mengatur lebar bagian dalam element */
+        /* Margin : Mengatur jarak antar element */
+        /* Border : Membuat bingkai di elemen */
+
+                .btn-submit:hover {
+            background-color: white;    
+            border: 1px solid teal;
+            color: teal;
+            padding: 0.5em;
+            border-radius: 0.2em;
+        }
+
+        .btn-submit:active {
+            background-color: orange;    
+            border: 1px solid orange;
+            color: white;
+            padding: 0.5em;
+            border-radius: 0.2em;
+        }
+
+        input[type="text"]:focus {
+            background-color: teal;
+            color: white;
+        }
+
+        input[type="email"]:focus {
+            background-color: teal;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- form>h1+(label+input:text)*2+button:submit.btn-submit{Submit} -->
+    <form action="">
+        <h1>Registrasi</h1>
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name" autofocus placeholder="Enter Your Name"><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email"><br><br>
+        <button type="submit" class="btn-submit">Submit</button>
+    </form>
+
+</body>
+
+</html>

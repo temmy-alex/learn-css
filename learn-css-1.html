@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Intro to HTML</title>
+    <!-- Internal CSS -->
+    <style>
+        /* Manipulasi elemen html berdasarkan tag */
+        h1 {
+            color: blue;
+            font-family: Arial, Verdana;
+        }
+
+        /* Manipulasi berdasarkan class */
+        .description1 {
+            font-style: italic;
+        }
+
+        .warna-latar {
+            background-color: orange;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        /* Manipulasi berdasarkan id */
+        #description2 {
+            font-weight: bolder;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- CSS itu ada 3 jenis
+        1. Internal CSS
+        Internal css diletakkan antara tag <head></head> dan menggunakan tag <style>Isi CSS Disis</style>
+        
+        2. Inline CSS
+        Inline css diletakkan didalam tag html itu sendiri menggunakan style=""
+
+        3. Eksternal CSS
+        Css yang dipanggil melalui file terpisah dengan file yang memiliki ekstension .css
+        bisa melalui file atau melalui link aktif
+        diletakkan di bagian <head></head>
+
+        Konsep CSS
+        selector { property: value; }
+
+        Selector = tag / class / id yang ingin diterapkan perubahan
+        Property = syntax / perintah css yang digunakan
+        Value = nilai dari property bisa berupa text atau angka / satuan
+
+        p { color: red; }
+
+        Class
+        Ditandai dengan titik ketika melakukan pemanggilan selector (.)
+        Class digunakan secara reusable (dapat digunakan oleh elemen yang lainnya)
+        Dalam 1 tag bisa dipanggil lebih dari 1 Class
+
+        ID
+        Ditandai dengan tanda pagar (#) ketika melakukan pemanggilan selector (#)
+        ID bersifat unik disarankan pada css untuk tidak memanggil id di tag lainnya 
+        jadi hanya dapat dipanggil pada 1 elemen tag html
+
+    -->
+    
+    <h1 style="background-color: grey; font-size: 4em;">Heading 1</h1>
+    <p class="description1 warna-latar underline">Lorem ipsum dolor, sit amet consectetur 
+        adipisicing elit. Quae dolores atque neque, quidem voluptate animi. 
+        Dolore eos ullam vero, natus, aliquid cum quibusdam officia ab dolores, 
+        explicabo aspernatur voluptate impedit.</p>
+    <p id="description2" class="warna-latar underline">Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit. Quod porro, eos modi numquam nostrum iste eveniet 
+        perferendis nesciunt deserunt ex quibusdam consectetur 
+        officia quasi nobis ad omnis beatae optio facere.</p>
+
+    <h1>Food</h1>
+    <ul class="food-list">
+        <li>Food 1</li>
+        <li>Food 2</li>
+        <li>Food 3</li>
+    </ul>
+
+    <h1>Drinks</h1>
+    <ul class="drinks-list">
+        <li>Drink 1</li>
+        <li>Drink 2</li>
+        <li>Drink 3</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,14 @@
+/* ul > li {
+    color: orange;
+    text-decoration: line-through;
+} */
+
+.food-list li {
+    color: orange;
+    text-decoration: line-through;
+}
+
+.drinks-list li {
+    color: green;
+    text-decoration: underline;
+}
